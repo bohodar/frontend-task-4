@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    background-color: #acc;
+}
+
+/* Start HEADER styiing */
+
+.header {
+    display: grid;
+    grid-template-columns: 150px auto 200px;
+    height: 70px;
+    padding: 8px 16px;
+
+    z-index: 10;
+}
+/* --------------------------HELPFUL----------------- */
+.header, .footer {
+    background-color: #de0;
+}
+
+.header__left-path {
+    display: flex;
+}
+
+.header__left-path__logo {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.header__center-path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__city-select {
+    width: 80%;
+    padding: 10px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.header__right-path {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header__right-path__buttons, .header__right-path__cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__right-path__ui-button {
+    width: 80%;
+    padding: 6px 10px;
+
+    background-color: #fff;
+    text-align: center;
+}
+
+/* End HEADER */
+
+/* Start MAIN_MENU styling */
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+
+    background-color: #7ca5ff;
+}
+
+.main-menu__part {
+    position: relative;
+    flex-grow: 1;
+    padding: 12px 0;
+    text-align: center;
+
+    border: 0px;
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.main-menu__part__title {
+    letter-spacing: 1px;
+}
+
+.main-menu__part__content {
+    position: absolute;
+    margin-top: 12px;
+    padding: 0 10px;
+    max-height: 0px;
+
+    background-color: #5489fc;
+    color: #111;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+    overflow: hidden;
+    transition: .2s;
+}
+
+.main-menu__part:hover {
+    color: #fff;
+    background-color: #5489fc;
+}
+
+.main-menu__part:hover .main-menu__part__content {
+    max-height: 200px;
+    padding: 12px 10px;
+}
+
+/* End MAIN-MENU */
+
+/* Start SLIDER styling */
+
+
+
+/* End SLIDER */
+
+/* Start UI-BODY styling */
+
+
+
+/* End UI-BODY */
