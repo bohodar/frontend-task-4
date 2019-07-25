@@ -5,7 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
 
-    height: 100vh;
+    height: 100%;
 
     background: linear-gradient(60deg, #0f2027 20%, #203a43 40%, #2c5364 60%) no-repeat;
 }
@@ -16,7 +16,7 @@ body {
 
     margin: 0 auto;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 
     overflow: auto;
     min-width: 760px;
@@ -178,6 +178,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 46px);
 
+    margin: 16px 20px;
     border: 2px solid #4e9bcd;
 }
 
