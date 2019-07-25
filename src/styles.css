@@ -133,6 +133,78 @@ body {
 
 /* Start UI-BODY styling */
 
+.cards-body {
+    padding: 20px 0;
+}
 
+.cards-body__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(5*47px) 24px;
+
+    padding: 20px 0;
+}
+
+.cards-body__cards {
+    display: flex;
+    justify-content: space-around;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cards-body__cards > label {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 46px);
+
+    border: 1px solid olivedrab;
+}
+
+.cards-body__cards > label input {
+    position: absolute;
+    left: -9999px;
+}
+
+.cards-body__cards > label input + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+
+    border: 2px solid #eee;
+
+    cursor: pointer;
+
+    font-size: 32px;
+}
+
+.cards-body__cards > label input:checked + label {
+    background-color: tomato;
+}
+
+.cards-body__warning {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: tomato;
+
+    max-width: 0;
+    overflow: hidden;
+
+    transition: max-width .2s;
+}
+
+.cards-body__warning--showed {
+    max-width: 200px;
+}
+
+.matched {
+    box-shadow: 0 0 8px 2px greenyellow;
+}
 
 /* End UI-BODY */
